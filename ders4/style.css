@@ -1,0 +1,38 @@
+/* burası yorum satırı */
+/* BU CSS İNDEX5e BAĞLIDIR */
+/* universel selector*/
+/* *{
+    text-align: center;
+    color:blue;
+} */
+/* element selector */
+/* p{
+    color:red;
+} */
+/* id selector */
+/* #id1 {
+    color:black;
+} */
+/* class selector */
+/* .center {
+  color:yellowgreen;
+} */
+/* combinasyon */
+p.center {
+    color:rgba(47, 0, 255,);
+}
+
+h1,h2 {
+    color:purple
+}
+
+div b {
+    color:brown
+}
+
+/* externel css(harici dosya),internnel css(satır içi),inline css(satır içi en yüksek rütbeli) */
+ 
+p {
+  background-color:rgba(255, 0, 0, 0.221);
+  color:rgba(47, 0, 255,);
+}

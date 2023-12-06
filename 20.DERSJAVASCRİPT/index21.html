@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20.DERS</title>
+</head>
+<body>
+    
+    <!-- html içeriğini değiştirebilir -->
+    <p id="içerikdeğişme">HTML içeriğini değiştirebilir</p>
+    <button type="button" onclick="document.getElementById('içerikdeğişme').innerHTML='Hello Javascript'">Click Me!</button><br><br>
+
+
+
+    <!-- HTML attribute değiştirebilir -->
+    <!-- <button onclick="document.getElementById('myImage').src='sabah.jpeg'">Sabah</button>
+    <img id="myImage" src="sabah.jpeg">
+    <button onclick="document.getElementById('youImage').src='akşam.jpeg'">Sabah</button>
+    <img id="youImage" src="akşam.jpeg"> <br><br><br> -->
+
+
+    <!-- ÇALIŞ -->
+
+
+
+
+    <!-- GİZLEME GÖSTTERME -->
+    <button type="button" onclick="document.getElementById('element').style.display='none'">Gizle</button>
+    <p id=element>HTML elementleri gizleyebilir gösterebilir</p>
+    <button type="button" onclick="document.getElementById('element').style.display='inline'">GÖSTER</button><br><br><br>
+
+
+
+    <p id="demo">Değişecek paragraf</p>
+    <button type="button" onclick="myFunction1()">Head</button>
+    <button type="button" onclick="myFunction2()">Body</button>
+    <button type="button" onclick="myFunction3()">External</button>
+
+    <!-- javascript statement (durum) javascript ifadeleri değerler,operatörler(+,-),expressions,anahtarlar-->
+
+    <!-- values: sabitler(literrals) - değişkenler(varibles) 
+
+    LİTERRALS
+    -numbers 10,20,3
+    -string "mustafa"
+    VARİBLES
+    -veri deposu için kullanılır.
+    -var,let,const ile başlar.
+    -let kutu_içerik = 6;
+    OPERATORS
+    - +,-,*,/,%(mod),**(üs alma)
+    İDENTİFİERS
+    -case sensitive(her harfin önemi) lastname,Lastname farklı şeyler
+    - last-name olmaz last_name olur lastName olur
+    -->
+
+
+</body>
+</html>
+<script>
+    function myFunction1() {
+        document.getElementById("demo").innerHTML = "HEAD içindeki script çalışır"
+    }
+</script>
+<script>
+    function myFunction2() {
+        document.getElementById("demo").innerHTML = "BODY içindeki script çalışır"
+    }
+</script>
+<script src="javascript.js"></script>
+<script>
+    document.write(5+13);
+    alert(5+3);
+    console.log(5+3);
+    console.log(5+4);
+</script>

@@ -51,3 +51,10 @@ console.log(a1)
     var a2 = 3;
 }
 console.log(a2)
+
+// dizi [];
+
+const cars = ["fiat,toyota,mercedes"]
+const numbers = [1,2,3,4,5,6.20]
+
+const  car1 = {type:"fiat",model:"500",color:"while",age:15}

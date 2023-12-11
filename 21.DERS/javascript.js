@@ -123,3 +123,28 @@ const person = {
 console.log(person.firstName)
 console.log(person["firstName"])
 console.log(person.fullName())
+
+
+                          //  TEKRAR
+
+function person3(pi) {
+    return pi + " pi = " + 7/22 * pi + " pi ile çarpımıdır"
+}
+console.log(person3(23))
+
+function person4(çarpma) {
+    return "Girdiğiniz sayının 259 ile çarpımı = " + (259 * çarpma)
+}
+console.log(person4(25))
+
+function person5(marka,model,yıl,km) {
+    const person5info = {
+        marka:marka,
+        model:model,
+        yıl:yıl,
+        km:km,
+        fullbilgi:function fullbilgiFunc(){return this.marka + " " + model + " " + yıl + " " + km}
+    }
+    console.log(person5info)
+}
+console.log("Arabanın markası=Bmw","Arabanın modeli=M5","Arabanın yılı=2016","Arabanın km'si=90k")

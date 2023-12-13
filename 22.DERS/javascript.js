@@ -91,11 +91,6 @@ let text16 = "Hello World"
 console.log(text16.charAt(0)) 
 console.log(text16[0])
 
-// ödev
-let text18 = "Hello World"
-let sonHarf = text18[text18.length - 1];
-console.log(sonHarf);
-
 
 //  kelimeleri tek tek farklı küme yapmayı sağlar
 let text17 = "elma,şeftali,üzüm"
@@ -109,10 +104,18 @@ let text20 = "Please locate where 'locate' occurs!"
 console.log(text20.indexOf("locate"))
 console.log(text20.lastIndexOf("locate"))
 // bulduğu içeriğin index değerini,bulamadıysa -1 döndürür.
+let text21 = "hello world and akhvqkjenjnkqfkjnf"
+console.log(text.includes("world"))
+// inclides kelmie varsa true yoksa false döndürür
+console.log(text.startsWith("hello"))
+console.log(text.endsWith("hello"))
+// start ve end eğer  başlangıç ve son kelmilerei girersek true dönndürür
 
 
-
-
+// ödev
+let text18 = "Hello World"
+let sonHarf = text18[text18.length - 1];
+console.log(sonHarf);
 
 
 

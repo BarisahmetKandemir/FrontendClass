@@ -63,7 +63,7 @@ console.log(cars)
 const meyveler = ["elma","armut","mandalina"]
 meyveler.splice(1,0,"cilek","muz","ayva")
 console.log(meyveler)
-// (nereye eleman ekleneceği,eklenecek elemandan sonra silinecek eleman sayısı,eklenecek elemanler)
+// (nereye eleman ekleneceği,eklenecek elemandan sonra silinecek eleman sayısı,eklenecek elemanlar)
 let secmemeyveler = meyveler.slice(-1)
 console.log(secmemeyveler)
 
@@ -94,7 +94,7 @@ console.log(cars3.sort(function(a,b){return a.year-b.year}))
 
     // İTARATİON(döngüler)
 
-// her bir elemanı açar ve index,,valulerine ayırır
+// her bir elemanı açar ve index,valulerine ayırır
 const numbers2 = [45,5,6,55,77]
 numbers2.forEach(
     function myFunction(value,index,array){
@@ -109,14 +109,14 @@ console.log(numbers2)
 
 console.log(" ")
 
-// map fonksiyon içinde işlem yapar arttırma çarpma gibi
+// map fonksiyon içinde işlem yapar arttırma çarpma gibi(map)
 const numbers3 = numbers2.map(myFunction)
 function myFunction(value,index,array){
     return value * 2
 }
 console.log(numbers3)
 
-// belirli bir aralıktaki sayıları verir
+// belirli bir aralıktaki sayıları verir(filter)
 const numbers4 = [45,5,6,55,77]
 const over18 = numbers4.filter(filterFunc)
 function filterFunc(val,ind,arr){
@@ -124,7 +124,7 @@ function filterFunc(val,ind,arr){
 }
 console.log(over18)
 
-// belirli aralıktaki bulduğu ilk sayıyı verir
+// belirli aralıktaki bulduğu ilk sayıyı verir(find)
 let first = numbers4.find(findFunc)
 function findFunc(val,ind,arr){
     return val > 18

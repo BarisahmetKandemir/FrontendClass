@@ -136,7 +136,7 @@ console.log(day)
 
 
 // LOOP (DÖNGÜ)
-// for, for/iin, for/of, while, do/while
+// for, for/in, for/of, while, do/while
 
 // For(code çalışmadan girilecek alan/tanımlama alanı;koşul durumu;her döngüden sonra çalışacak alanı verir)
 for (let i = 0; i < 5; i++){
@@ -161,10 +161,6 @@ const arr = [1,2,3,4,5,6]
 for (let l = 0,r = arr.length - 1; l<r; l++,r--){
     console.log(arr[l],arr[r])
 }
-
-
-
-
 
 
 

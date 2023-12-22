@@ -86,22 +86,3 @@ for(let i = 0 ; i < 10 ; i++){
     }
     console.log(i)
 }
-
-// try-catch-finaly hat yönetim araçları
-try {
-    console.log("mesaj içeriği sağlıklı")
-}
-catch(error){
-    console.log(error.message)
-}
-
-let x = "    ";
-try {
-    if(x.trim() == "") throw{message:"empty"}
-}
-catch(err){
-    console.log(err.message)
-}
-finally {
-    console.log("try chatch içeriği sonlandı")
-}

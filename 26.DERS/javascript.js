@@ -139,7 +139,7 @@ function calc(num1,num2,myCallback = () => {}){
     myCallback(sum)
     return sum;
 }
-calc(4,5)
+calc(4,5,display)
 
 
 

@@ -126,73 +126,89 @@ document.getElementById("demo").style.color = "red"
 document.getElementById("demo2").style.backgroundColor = "yellow"
 console.log(document.getElementById("demo"))
 
-
-
-
-
-
-// ÖDEV= 1 den 10a kadar yazınca geçerli olan fonksiyonu yazınız.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // USİNG EVENTS
+
+// Onclick(Tıklandığında değişir)
+
+// function changeColor() {
+//     let m = document.getElementById("id1").style.Color = "blue";
+// }
+
+function hide(){
+    let k = document.getElementById("p2").style.visibility = "hidden"
+}
+
+function show(){
+    let l = document.getElementById("p2").style.visibility = "visible"
+}
+
+function changeText(id){
+    id.innerHTML = "Oooooops"
+}
+
+// Onchange
+
+function uppercase(){
+    const h = document.getElementById("fname");
+    h.value = h.value.toUpperCase();
+}
+
+// Üsüne geldiğinde değişir
+
+function mOver(obj){
+    obj.innerHTML = "Thank you"
+    obj.style.backgroundColor = "blue"
+    obj.style.color = "white"
+}
+function mOut(obj){
+    obj.innerHTML = "Mouse Over Me"
+    obj.style.backgroundColor = "red"
+    obj.style.color = "black"
+}
+
+
+document.getElementById("myBtn").addEventListener("click",function(){
+    alert("hello world")
+})
+
+// Tıkladğında yada Üstüne Geldiğinde yazı yazar
+
+let u = document.getElementById("myBtn")
+u.addEventListener("mouseover",myFunctionx)
+u.addEventListener("click",mySecondFunctionx)
+u.addEventListener("mouseout",myThirdFunctionx)
+
+function myFunctionx(){
+    document.getElementById("demo").innerHTML += "Moused over! <br>"
+}
+function mySecondFunctionx(){
+    document.getElementById("demo").innerHTML += "Clickes! <br>"
+}
+function myThirdFunctionx(){
+    document.getElementById("demo").innerHTML += "Moused out <br>"
+}
+
+// Bubbling-capturing
+// bubbling de önce en içteki işlenir
+// capturing de önce en dışdaki öğe işlenir
+
+
+document.getElementById("myP1").addEventListener("click",function(){
+    alert("myP1")
+},false
+)
+document.getElementById("myDiv1").addEventListener("click",
+function(){
+    alert("myDiv1")
+},
+false)
+document.getElementById("myP2").addEventListener("click",
+function(){
+    alert("myP2")
+},
+true)
+document.getElementById("myDiv2").addEventListener("click",
+function(){
+    alert("myDiv2")
+},
+true)

@@ -192,7 +192,6 @@ function myThirdFunctionx(){
 // bubbling de önce en içteki işlenir
 // capturing de önce en dışdaki öğe işlenir
 
-
 document.getElementById("myP1").addEventListener("click",function(){
     alert("myP1")
 },false
@@ -212,3 +211,15 @@ function(){
     alert("myDiv2")
 },
 true)
+
+
+// Removehalder
+
+document.getElementById("myDIV").addEventListener("mousemove", myFunction)
+function myFunction() {
+    document.getElementById("demo4").innerHTML = Math.random();
+}
+
+function removeHandler() {
+    document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}

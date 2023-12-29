@@ -100,10 +100,23 @@ const xhttp = new XMLHttpRequest()
 xhttp.onload = function(){
     // yüklendiğinde yapılması gereken söylenir
     document.getElementById("demo5").
-    innerHTML = this.responseText
+    innerHTML =JSON.parse(this.responseText).name
     console.log(JSON.parse(this.responseText))
 }
 xhttp.open("GET","ajax.JSON")
 xhttp.send()
+
+
+const xhttps = new XMLHttpRequest();
+xhttps.onreadystatechange = function(){
+    console.log(this.readyState)
+    console.log(this.status)
+}
+xhttps.onload = function (){
+    document.getElementById("demo").innerHTML = this.responseText
+    console.log(this)
+}
+xhttps.open("GET","ajax.txt")
+xhttps.send
 
 
